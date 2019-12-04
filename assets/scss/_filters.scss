@@ -1,0 +1,78 @@
+#filters {
+
+  float: left;
+  background: $offwhite;
+  padding: 40px 0 40px 10%;
+
+  .title {
+    color: $darkgray2;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-shadow: 1px 0 $darkgray2;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  .select {
+    position: relative;
+
+    select {
+      appearance: none;
+      width: 85%;
+      height: 35px;
+      padding-left: 14px;
+      margin: 13px 0;
+      font-size: 0.95rem;
+      font-weight: 700;
+      background: transparent;
+      color: $gray;
+      border: 1px solid $offwhite3;
+      border-radius: 5px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 $gray;
+      }
+    }
+
+    &:after {
+      content: '\203A';
+      font-size: 30px;
+      font-weight: 100;
+      color: $gray;
+      transform: rotate(90deg);
+      top: 25%;
+      right: 15%;
+      position: absolute;
+      pointer-events: none;
+    }
+  }
+
+  .input {
+    label {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: $gray;
+      letter-spacing: 2px;
+      display: block;
+      margin: 50px 0 20px 0;
+    }
+
+    input {
+      height: 30px;
+      width: 40%;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    span {
+      margin: 0 5px;
+    }
+  }
+}

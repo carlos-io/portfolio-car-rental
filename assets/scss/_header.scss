@@ -1,0 +1,39 @@
+header {
+  background-color: $darkpurple;
+  overflow: auto;
+  padding: 35px 10%;
+
+  .logo {
+    float: left;
+    color: white;
+  }
+
+  nav {
+    float: right;
+
+    a {
+      color: white;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-left: 30px;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        color: $pink;
+      }
+
+      span {
+        background: $pink;
+        background: linear-gradient(to bottom, $pink 0%, $pink2 100%);
+        padding: 10px 34px;
+        border-radius: 4px;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+          background: white;
+          background: linear-gradient(to bottom, white 0%, white 100%);
+        }
+      }
+    }
+  }
+}
