@@ -1,8 +1,8 @@
 #filters {
-
-  float: left;
+  display: inline-block;
+  width: 250px;
   background: $offwhite;
-  padding: 40px 0 40px 10%;
+  padding: 40px 25px 40px 6%;
 
   .title {
     color: $darkgray2;
@@ -17,15 +17,17 @@
     position: relative;
 
     select {
+      cursor: pointer;
       appearance: none;
-      width: 85%;
+      width: 95%;
       height: 35px;
       padding-left: 14px;
       margin: 13px 0;
       font-size: 0.95rem;
       font-weight: 700;
+      letter-spacing: 1px;
       background: transparent;
-      color: $gray;
+      color: $darkgray;
       border: 1px solid $offwhite3;
       border-radius: 5px;
 
@@ -35,7 +37,7 @@
 
       &:-moz-focusring {
         color: transparent;
-        text-shadow: 0 0 0 $gray;
+        text-shadow: 0 0 0 $darkgray;
       }
     }
 
@@ -43,16 +45,47 @@
       content: '\203A';
       font-size: 30px;
       font-weight: 100;
-      color: $gray;
+      color: $lightgray2;
       transform: rotate(90deg);
-      top: 25%;
-      right: 15%;
+      top: 18px;
+      right: 10px;
       position: absolute;
       pointer-events: none;
     }
   }
 
-  .input {
+  .slider {
+    position: relative;
+    width: 100%;
+    margin-bottom: 80px;
+
+    div.base-fill {
+      position: absolute;
+      left: 2px;
+      top: 37px;
+      height: 2px;
+      width: 99%;
+      background-color: $pink;
+    }
+
+    div.low-fill {
+      position: absolute;
+      left: 0;
+      top: 37px;
+      background-color: $lightgray;
+      height: 2px;
+      width: 0;
+    }
+
+    div.high-fill {
+      position: absolute;
+      right: 0;
+      top: 37px;
+      background-color: $lightgray;
+      height: 2px;
+      width: 0;
+    }
+
     label {
       font-size: 0.95rem;
       font-weight: 700;
@@ -63,16 +96,120 @@
     }
 
     input {
-      height: 30px;
-      width: 40%;
+      appearance: none;
+      position: absolute;
+      left: 0;
+      top: 35px;
+      width: 100%;
+      height: 2px;
+      background-color: transparent;
 
       &:focus {
         outline: none;
       }
+
+      &::-moz-focus-outer {
+        border: 0;
+      }
+
+      &::-webkit-slider-thumb {
+        appearance: none;
+        position: relative;
+        z-index: 2;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: white;
+        box-shadow: 0 3px 6px 0px rgba(0,0,0,0.2);
+        cursor: pointer;
+      }
+
+      &::-moz-range-thumb {
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border-color: transparent;
+        background: white;
+        box-shadow: 0 3px 6px 0px rgba(0,0,0,0.2);
+        cursor: pointer;
+      }
     }
 
     span {
-      margin: 0 5px;
+      position: relative;
+      top: 30px;
+      font-size: 1rem;
+      color: $darkgray2;
+    }
+
+    span:first-child {
+      float: left;
+    }
+
+    span:last-child {
+      float: right;
+    }
+  }
+
+  .features {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: $gray;
+    letter-spacing: 2px;
+    display: block;
+    margin: 0 0 10px 0;
+  }
+
+  .checkbox {
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 1px solid $offwhite3;
+    font-size: 15px;
+    color: $darkgray2;
+
+    input {
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: 13px;
+      appearance: none;
+      height: 20px;
+      width: 20px;
+      border: 1px solid $lightgray2;
+      border-radius: 2px;
+      color: $pink;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        background-color: $offwhite2;
+      }
+
+      &:checked ~ span {
+          display: block;
+      }
+    }
+
+    span {
+      display: none;
+      pointer-events: none;
+      position: absolute;
+      right: 3px;
+      top: 16px;
+      height: 22px;
+      width: 22px;
+      border-radius: 2px;
+      background: linear-gradient(to bottom, $pink 0%, $pink2 100%);
+      color: white;
+
+      i {
+        position: relative;
+        top: 4px;
+        left: 4px;
+      }
     }
   }
 }
