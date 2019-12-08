@@ -9,10 +9,10 @@ export default class Listings extends Component {
     return (<section id="listings">
       <div className="search">
         <span><input type="text" name="search" id="search" placeholder="Find Your Ride" /></span>
-        <a href="javascript:void(0)"><span>X</span></a>
+        <a href="javascript:void(0)"><span>+</span></a>
       </div>
-      <div>
-        <div className="found">n results found</div>
+      <div className="found-filter">
+        <div className="found">0 results found</div>
         <div className="filter">
           <span className="order">
             <select name="order" id="order">
@@ -29,12 +29,14 @@ export default class Listings extends Component {
             <div className="overlay">
               <div className="user">
                 <div className="avatar"></div>
-                <div className="name">Martina Crevatin</div>
-                <div className="postdate">Posted on 05/09/17</div>
+                <div className="name-postdate">
+                  <div>Martina Crevatin</div>
+                  <div>Posted on 05/09/17</div>
+                </div>
               </div>
               <div className="details">
-                <span>n miles</span>
-                <span>n seats</span>
+                <span>0 miles</span>
+                <span>0 seats</span>
               </div>
               <div className="rent-btn">
                 Rent
@@ -43,20 +45,21 @@ export default class Listings extends Component {
           </div>
           <div className="bottom">
             <div className="dailyfee">
-              $N / day
+              $0 / day
             </div>
             <div className="location">
-              New York
+              <i className="fa fa-map-marker"></i>
+              <span>New York</span>
             </div>
           </div>
         </div>
       </div>
       <div className="pagination">
         <div class="previous">prev</div>
-        <div className="number">1</div>
-        <div className="number">2</div>
-        <div className="number">3</div>
-        <div className="number">4</div>
+        <div className="number"><div>1</div></div>
+        <div className="number"><div>2</div></div>
+        <div className="number"><div>3</div></div>
+        <div className="number"><div>4</div></div>
         <div className="next">next</div>
       </div>
     </section>)

@@ -12,10 +12,12 @@ export default class Main extends Component {
   }
 
   render() {
-    return (<div className="container">
+    return (<div>
       <Header />
-      <Filters />
-      <Listings />
+      <div>
+        <Filters />
+        <Listings />
+      </div>
       <Footer />
     </div>)
   }

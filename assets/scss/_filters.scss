@@ -2,7 +2,8 @@
   display: inline-block;
   width: 250px;
   background: $offwhite;
-  padding: 40px 25px 40px 6%;
+  padding: 40px 25px 40px 75px;
+  border-right: 1px solid $offwhite2;
 
   .title {
     color: $darkgray2;
