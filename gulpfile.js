@@ -21,6 +21,7 @@ function serve() {
 
     watch('assets/scss/**/*.scss', generateCSS);
     watch(['assets/js/**/*.js', 'assets/js/**/*.jsx'], generateJS);
+    watch('assets/img/**/*', generateIMG);
     watch('public/**/*.html').on('change', browserSync.reload);
 }
 
