@@ -7,16 +7,14 @@ import Footer from './Footer.jsx'
 export default class Main extends Component {
   constructor() {
     super()
-    this.state = {
-    }
   }
 
   render() {
     return (<div>
       <Header />
       <div>
-        <Filters />
-        <Listings />
+        <Filters state={this.props.state.filter} listings={this.props.state.listings} change={this.props.change} />
+        <Listings listings={this.props.state.filteredListings} change={this.props.change} sort={this.props.sort} />
       </div>
       <Footer />
     </div>)

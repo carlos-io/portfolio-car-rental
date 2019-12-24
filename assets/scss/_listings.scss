@@ -89,7 +89,7 @@
           color: $lightgray2;
           transform: rotate(90deg);
           position: absolute;
-          top: 4px;
+          top: 5px;
           right: 10px;
           pointer-events: none;
         }
@@ -107,7 +107,7 @@
       margin-bottom: 35px;
       width: 280px;
       height: 260px;
-      box-shadow: 0px 4px 10px -1px rgba(0,0,0,0.07);
+      box-shadow: 0px 4px 10px -1px rgba(0,0,0,0.1);
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
 
@@ -120,8 +120,8 @@
         .vehicle {
           position: absolute;
           z-index: 2;
-          bottom: 10px;
-          left: 20px;
+          bottom: 9px;
+          left: 22px;
           color: white;
           font-size: 0.9rem;
           font-weight: 700;
@@ -151,7 +151,7 @@
           transition: all 0.1s ease-in-out;
 
           .user {
-            padding: 20px 20px 0 20px;
+            padding: 15px 15px 5px 15px;
 
             .avatar {
               display: inline-block;
@@ -162,7 +162,7 @@
             }
 
             .name-postdate {
-              margin-left: 20px;
+              margin-left: 15px;
               display: inline-block;
               vertical-align: top;
 
@@ -179,16 +179,23 @@
           }
 
           .details {
-            margin: 0 85px;
+            margin: 3px 15px 0 75px;
 
-            span {
-              display: block;
+            div {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: 1fr 1fr 1fr 1fr;
+              column-gap: 5px;
+              row-gap: 5px;
+              vertical-align: middle;
+              position: relative;
+              top: -10px;
             }
           }
 
           .rent-btn {
             position: absolute;
-            bottom: 34px;
+            bottom: 32px;
             left: 75px;
             width: 130px;
             padding: 9px 0 8px 0;
@@ -250,7 +257,7 @@
     text-align: center;
     margin-top: 25px;
     padding: 0 90px;
-    box-shadow: 0 21px 39px -27px rgba(0,0,0,.18)
+    box-shadow: 0 19px 39px -27px rgba(0,0,0,.25);
 
     & > div {
       display: inline-block;
