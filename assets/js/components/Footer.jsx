@@ -21,31 +21,39 @@ export default class Footer extends Component {
         <div className="download">
           <div className="call2action">Download CarRental App</div>
           <div className="proposition">Use our app to have 12,124 rental cars at hand</div>
-          <div className="playstore">
-            <span className="icon"></span>
-            <span className="storename">Playstore</span>
-          </div>
-          <div className="appstore">
-            <span className="icon"></span>
-            <span className="storename">AppStore</span>
-          </div>
+          <a href="javascript:void(0)">
+            <div className="playstore">
+              <span className="icon"><i className="fab fa-google-play"></i></span>
+              <span className="storename">Playstore</span>
+            </div>
+          </a>
+          <a href="javascript:void(0)">
+            <div className="appstore">
+              <span className="icon"><i className="fab fa-apple"></i></span>
+              <span className="storename">AppStore</span>
+            </div>
+          </a>
           <div className="socialmedia">
-            <div className="facebook">
-              <i>Facebook</i>
-            </div>
-            <div className="twitter">
-              <i>Twitter</i>
-            </div>
+            <a href="javascript:void(0)">
+              <div className="facebook">
+                <i className="fab fa-facebook-f"></i>
+              </div>
+            </a>
+            <a href="javascript:void(0)">
+              <div className="twitter">
+                <i className="fab fa-twitter"></i>
+              </div>
+            </a>
           </div>
-        </div>
-        <div className="copyright">
-          2018 - 2019 CarRental. All Rights Reserved
+          <div className="copyright">
+            2018 - 2019 CarRental. All Rights Reserved
+          </div>
         </div>
       </div>
       <div className="sitemap">
         <div className="tenants">
           <div className="title">
-            For Tenants
+            For Renters
           </div>
           <div className="links">
             <ul>
