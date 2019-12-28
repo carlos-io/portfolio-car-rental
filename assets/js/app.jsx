@@ -47,7 +47,6 @@ class App extends Component {
         [name]: value,
       }
     }, () => {
-      console.log(this.state.filter.search)
       this.filter()
     })
   }
