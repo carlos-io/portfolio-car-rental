@@ -284,12 +284,12 @@
         border-radius: 50%;
         background: none;
         transition: all 0.1s ease-in-out;
+      }
 
-        &:hover,
-        &:active {
-          color: white;
-          background: linear-gradient(to bottom, $pink 0%, $pink2 100%);
-        }
+      &.active div,
+      div:hover {
+        color: white;
+        background: linear-gradient(to bottom, $pink 0%, $pink2 100%);
       }
     }
 
