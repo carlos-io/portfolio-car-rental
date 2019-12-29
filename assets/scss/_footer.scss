@@ -63,11 +63,14 @@ footer {
             padding-top: 50%;
             text-align: center;
             color: $blue;
-            font-size: 1.5rem;
-            font-weight: 700;
 
-            &:after {
-              content: 'test';
+            i {
+              font-size: 5rem;
+            }
+
+            div:last-child {
+              font-size: 2.2rem;
+              font-weight: 700;
             }
           }
         }

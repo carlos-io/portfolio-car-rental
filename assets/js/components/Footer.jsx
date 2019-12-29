@@ -14,12 +14,15 @@ export default class Footer extends Component {
             <div className="camera"></div>
             <div className="speaker"></div>
             <div className="screen">
-              <div className="logo"></div>
+              <div className="logo">
+                <div className="car"><i className="fas fa-car"></i></div>
+                <div>RentCar</div>
+              </div>
             </div>
           </div>
         </div>
         <div className="download">
-          <div className="call2action">Download CarRental App</div>
+          <div className="call2action">Download the RentCar App</div>
           <div className="proposition">Use our app to have 12,124 rental cars at hand</div>
           <a href="javascript:void(0)">
             <div className="playstore">
