@@ -56,7 +56,7 @@ export default class Listings extends Component {
     return (<section id="listings">
       <div className="search">
         <span><input type="text" name="search" id="search" placeholder="Find Your Ride" onChange={this.props.change} /></span>
-        <a href="javascript:void(0)"><span>+</span></a>
+        <a onClick={this.props.clear} style={{ cursor: 'pointer' }}><span>+</span></a>
       </div>
       <div className="found-filter">
         <div className="found">{count} result{(count === 1) ? '' : 's'} found</div>
@@ -74,10 +74,10 @@ export default class Listings extends Component {
       </div>
       <div className="pagination">
         <div class="previous">prev</div>
-        <div className="number active"><div>1</div></div>
-        <div className="number"><div>2</div></div>
-        <div className="number"><div>3</div></div>
-        <div className="number"><div>4</div></div>
+        <div className="number active"><div><span>1</span></div></div>
+        <div className="number"><div><span>2</span></div></div>
+        <div className="number"><div><span>3</span></div></div>
+        <div className="number"><div><span>4</span></div></div>
         <div className="next">next</div>
       </div>
     </section>)

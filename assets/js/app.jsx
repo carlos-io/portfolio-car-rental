@@ -27,6 +27,7 @@ class App extends Component {
     }
 
     this.change = this.change.bind(this)
+    this.clear = this.clear.bind(this)
     this.sort = this.sort.bind(this)
   }
 
@@ -47,6 +48,19 @@ class App extends Component {
         [name]: value,
       }
     }, () => {
+      this.filter()
+    })
+  }
+
+  clear() {
+    this.setState({
+      ...this.state,
+      filter: {
+        ...this.state.filter,
+        search: ''
+      }
+    }, () => {
+      document.querySelector("#search").value = ''
       this.filter()
     })
   }
@@ -98,7 +112,7 @@ class App extends Component {
   }
 
   render() {
-    return (<Main state={this.state} change={this.change} sort={this.sort} />);
+    return (<Main state={this.state} change={this.change} clear={this.clear} sort={this.sort} />);
   }
 }
 

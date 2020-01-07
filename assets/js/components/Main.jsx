@@ -14,7 +14,7 @@ export default class Main extends Component {
       <Header />
       <div>
         <Filters state={this.props.state.filter} listings={this.props.state.listings} change={this.props.change} />
-        <Listings listings={this.props.state.filteredListings} change={this.props.change} sort={this.props.sort} />
+        <Listings listings={this.props.state.filteredListings} change={this.props.change} clear={this.props.clear} sort={this.props.sort} />
       </div>
       <Footer />
     </div>)
