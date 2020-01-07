@@ -7,7 +7,34 @@
   letter-spacing: 2px;
 }
 
+@import "sidemenu";
 @import "header";
 @import "filters";
 @import "listings";
 @import "footer";
+
+@media only screen and (max-width: 1075px) {
+  header {
+    nav {
+      #hamburger {
+        display: block;
+      }
+
+      #links {
+        display: none;
+      }
+    }
+  }
+
+  #filters {
+    display: none;
+  }
+
+  #sidemenu {
+    display: block;
+
+    #filters {
+      display: block;
+    }
+  }
+}

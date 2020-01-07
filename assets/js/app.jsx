@@ -111,8 +111,17 @@ class App extends Component {
     }
   }
 
+  showmenu() {
+    document.getElementById('sidemenu').classList.toggle('show')
+  }
+
+  hidemenu() {
+    document.getElementById('sidemenu').classList.toggle('show')
+  }
+
   render() {
-    return (<Main state={this.state} change={this.change} clear={this.clear} sort={this.sort} />);
+    return (<Main state={this.state} change={this.change} clear={this.clear}
+                  sort={this.sort} showmenu={this.showmenu} hidemenu={this.hidemenu} />);
   }
 }
 

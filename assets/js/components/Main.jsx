@@ -11,7 +11,8 @@ export default class Main extends Component {
 
   render() {
     return (<div>
-      <Header />
+      <SideMenu hidemenu={this.props.hidemenu} state={this.props.state.filter} listings={this.props.state.listings} change={this.props.change} />
+      <Header showmenu={this.props.showmenu} />
       <div>
         <Filters state={this.props.state.filter} listings={this.props.state.listings} change={this.props.change} />
         <Listings listings={this.props.state.filteredListings} change={this.props.change} clear={this.props.clear} sort={this.props.sort} />
