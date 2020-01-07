@@ -269,6 +269,7 @@
 
     .previous {
       color: $lightblue;
+      transition: all 0.1s ease-in-out;
 
       &:hover {
         color: $pink;
@@ -296,6 +297,7 @@
 
     .next {
       color: $blue;
+      transition: all 0.1s ease-in-out;
 
       &:hover {
         color: $pink;
