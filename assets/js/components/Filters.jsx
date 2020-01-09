@@ -5,7 +5,7 @@ export default class Filters extends Component {
     super()
     this.price_min = 0
     this.price_max = 500
-    this.price_gap = 49
+    this.price_gap = 65
     this.updateSlider = this.updateSlider.bind(this)
   }
 
