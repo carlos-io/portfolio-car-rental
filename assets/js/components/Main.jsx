@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import SideMenu from './SideMenu.jsx'
 import Header from './Header.jsx'
 import Filters from './Filters.jsx'
 import Listings from './Listings.jsx'
