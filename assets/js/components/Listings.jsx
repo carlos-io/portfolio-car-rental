@@ -7,8 +7,15 @@ export default class Listings extends Component {
   }
 
   showListings() {
+    const pagination = document.getElementById('pagination')
+
     if (this.props.listings.length === 0) {
+      pagination.style.display = 'none'
       return <div>No matching listings found.</div>
+    }
+
+    if (pagination) {
+      pagination.style.display = 'block'
     }
 
     return this.props.listings.map(l => (
@@ -72,7 +79,7 @@ export default class Listings extends Component {
       <div className="cards">
         {this.showListings()}
       </div>
-      <div className="pagination">
+      <div id="pagination" className="pagination">
         <div class="previous">prev</div>
         <div className="number active"><div><span>1</span></div></div>
         {/* <div className="number"><div><span>2</span></div></div> */}
