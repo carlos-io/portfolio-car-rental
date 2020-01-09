@@ -75,7 +75,7 @@ export default class Listings extends Component {
       <div className="pagination">
         <div class="previous">prev</div>
         <div className="number active"><div><span>1</span></div></div>
-        <div className="number"><div><span>2</span></div></div>
+        {/* <div className="number"><div><span>2</span></div></div> */}
         <div className="next">next</div>
       </div>
     </section>)

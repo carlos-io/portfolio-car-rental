@@ -271,10 +271,6 @@
     .previous {
       color: $lightblue;
       transition: all 0.1s ease-in-out;
-
-      &:hover {
-        color: $pink;
-      }
     }
 
     .number {
@@ -302,12 +298,8 @@
     }
 
     .next {
-      color: $blue;
+      color: $lightblue;
       transition: all 0.1s ease-in-out;
-
-      &:hover {
-        color: $pink;
-      }
     }
   }
 }
