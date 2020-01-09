@@ -11,8 +11,8 @@ export default class Filters extends Component {
 
   updateSlider(event) {
     const slider = event.target.name.split('_')[1]
-    const grayFill = document.querySelector('#' + event.target.name).previousSibling
-    const labels = document.querySelector('#' + event.target.name).parentElement.querySelectorAll('span')
+    const grayFill = event.target.previousSibling
+    const labels = event.target.parentElement.querySelectorAll('span')
     const opposingThumb = event.target.getAttribute('data-opposite')
     const opposingValue = parseInt(document.querySelector('#' + opposingThumb).value)
     const value = parseInt(event.target.value)
