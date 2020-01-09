@@ -49,7 +49,7 @@ export default class Footer extends Component {
             </a>
           </div>
           <div className="copyright">
-            2018 - 2019 CarRental. All Rights Reserved
+            2018 - 2019 RentCar. All Rights Reserved
           </div>
         </div>
       </div>
@@ -60,10 +60,10 @@ export default class Footer extends Component {
           </div>
           <div className="links">
             <ul>
-              <li><a href="javascript:void(0)">About CarRental</a></li>
+              <li><a href="javascript:void(0)">About RentCar</a></li>
               <li><a href="javascript:void(0)">Sign Up for free</a></li>
               <li><a href="javascript:void(0)">About Us</a></li>
-              <li><a href="javascript:void(0)">CarRental App</a></li>
+              <li><a href="javascript:void(0)">RentCar App</a></li>
             </ul>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default class Footer extends Component {
           </div>
           <div className="links">
             <ul>
-              <li><a href="javascript:void(0)">About CarRental</a></li>
+              <li><a href="javascript:void(0)">About RentCar</a></li>
             </ul>
           </div>
         </div>
