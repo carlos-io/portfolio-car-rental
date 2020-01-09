@@ -16,7 +16,7 @@ export default class Footer extends Component {
             <div className="screen">
               <div className="logo">
                 <div className="car"><i className="fas fa-car"></i></div>
-                <div>RentCar</div>
+                <div><span>Rent</span><span>Car</span></div>
               </div>
             </div>
           </div>

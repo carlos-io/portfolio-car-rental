@@ -12,7 +12,7 @@ export default class Header extends Component {
           <div className="car">
             <a href="#">
               <div><i className="fas fa-car"></i></div>
-              <div>RentCar</div>
+              <div><span>Rent</span><span>Car</span></div>
             </a>
           </div>
         </div>

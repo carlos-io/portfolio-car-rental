@@ -20,6 +20,14 @@ header {
           i {
             font-size: 3rem;
           }
+
+          span {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+
+          span:first-child {
+            color: $pink2;
+          }
         }
       }
     }
