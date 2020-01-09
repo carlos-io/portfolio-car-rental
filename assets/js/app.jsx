@@ -65,6 +65,28 @@ class App extends Component {
     })
   }
 
+  sort(event) {
+    const value = event.target.value
+
+    if (value === 'newest') {
+      this.setState({
+        ...this.state,
+        listings: this.state.listings.sort((a, b) => new Date(b.user.postDate) - new Date(a.user.postDate))
+      }, () => {
+        this.filter()
+      })
+    }
+
+    if (value === 'oldest') {
+      this.setState({
+        ...this.state,
+        listings: this.state.listings.sort((a, b) => new Date(a.user.postDate) - new Date(b.user.postDate))
+      }, () => {
+        this.filter()
+      })
+    }
+  }
+
   filter() {
     const filteredListings = this.state.listings
       .filter(l => (this.state.filter.city === 'any') ? true : l.vehicle.city === this.state.filter.city)
@@ -91,24 +113,6 @@ class App extends Component {
       ...this.state,
       filteredListings
     })
-  }
-
-  sort(event) {
-    const value = event.target.value
-
-    if (value === 'newest') {
-      this.setState({
-        ...this.state,
-        listings: this.state.listings.sort((a, b) => new Date(b.user.postDate) - new Date(a.user.postDate))
-      })
-    }
-
-    if (value === 'oldest') {
-      this.setState({
-        ...this.state,
-        listings: this.state.listings.sort((a, b) => new Date(a.user.postDate) - new Date(b.user.postDate))
-      })
-    }
   }
 
   showmenu() {
