@@ -26,7 +26,7 @@ header {
           }
 
           span:first-child {
-            color: $pink2;
+            color: $blue;
           }
         }
       }
@@ -64,19 +64,17 @@ header {
         transition: all 0.1s ease-in-out;
 
         &:hover {
-          color: $pink;
+          color: $blue;
         }
 
         span {
           letter-spacing: 1px;
-          background: $pink;
-          background: linear-gradient(to bottom, $pink 0%, $pink2 100%);
+          background: linear-gradient(to bottom, $blue 0%, $blue2 100%);
           padding: 10px 34px;
           border-radius: 4px;
           transition: all 0.1s ease-in-out;
 
           &:hover {
-            background: white;
             background: linear-gradient(to bottom, white 0%, white 100%);
           }
         }

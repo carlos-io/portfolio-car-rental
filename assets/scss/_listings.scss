@@ -147,7 +147,7 @@
           z-index: 1;
           font-size: 0.7rem;
           color: white;
-          background: linear-gradient(to right, rgba(72,48,172,0.8) 0%,rgba(191,109,199,0.8) 100%);
+          background: linear-gradient(to right, rgba(48, 83, 172, 0.8) 0%,rgba(131, 109, 199, 0.8) 100%);
           border-top-left-radius: 5px;
           border-top-right-radius: 5px;
           transition: all 0.1s ease-in-out;
@@ -204,13 +204,13 @@
             text-align: center;
             font-size: 1rem;
             font-weight: 700;
-            background: linear-gradient(to bottom, $pink 0%,$pink2 100%);
+            background: linear-gradient(to bottom, $blue 0%, $blue2 100%);
             border-radius: 4px;
             transition: all 0.1s ease-in-out;
 
             &:hover {
               cursor: pointer;
-              color: $pink;
+              color: $blue;
               background: white;
             }
           }
@@ -269,7 +269,7 @@
     }
 
     .previous {
-      color: $lightblue;
+      color: $lightpink;
       transition: all 0.1s ease-in-out;
     }
 
@@ -293,12 +293,12 @@
       &.active div,
       div:hover {
         color: white;
-        background: linear-gradient(to bottom, $pink 0%, $pink2 100%);
+        background: linear-gradient(to bottom, $blue 0%, $blue 100%);
       }
     }
 
     .next {
-      color: $lightblue;
+      color: $lightpink;
       transition: all 0.1s ease-in-out;
     }
   }
