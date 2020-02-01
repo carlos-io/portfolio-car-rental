@@ -8,7 +8,7 @@ const listings = [
             year: 2010,
             color: 'red',
             transmission: 'automatic',
-            image: '/img/vehicles/2010-ford-f-150.jpg',
+            image: 'img/vehicles/2010-ford-f-150.jpg',
             city: 'Austin',
             state: 'TX',
             rate: 30,
@@ -21,7 +21,7 @@ const listings = [
         },
         user: {
             name: 'Mark Johnson',
-            image: '/img/users/22.jpg',
+            image: 'img/users/22.jpg',
             postDate: '03/15/19',
         }
     },
@@ -34,7 +34,7 @@ const listings = [
             year: 2016,
             color: 'white',
             transmission: 'automatic',
-            image: '/img/vehicles/2016-tesla-s.jpg',
+            image: 'img/vehicles/2016-tesla-s.jpg',
             city: 'Los Angeles',
             state: 'CA',
             rate: 70,
@@ -47,7 +47,7 @@ const listings = [
         },
         user: {
             name: 'Derrick Wells',
-            image: '/img/users/VUMBKh1U.jpg',
+            image: 'img/users/VUMBKh1U.jpg',
             postDate: '01/15/19',
         }
     },
@@ -60,7 +60,7 @@ const listings = [
             year: 2018,
             color: 'gray',
             transmission: 'manual',
-            image: '/img/vehicles/2018-porsche-carrera.png',
+            image: 'img/vehicles/2018-porsche-carrera.png',
             city: 'Rochester',
             state: 'NY',
             rate: 100,
@@ -73,7 +73,7 @@ const listings = [
         },
         user: {
             name: 'Jacob Ginnish',
-            image: '/img/users/Ne48Jqjh.jpg',
+            image: 'img/users/Ne48Jqjh.jpg',
             postDate: '01/21/19',
         }
     },
@@ -86,7 +86,7 @@ const listings = [
             year: 2015,
             color: 'green',
             transmission: 'automatic',
-            image: '/img/vehicles/2015-lamborghini-aventador.jpg',
+            image: 'img/vehicles/2015-lamborghini-aventador.jpg',
             city: 'Miami',
             state: 'FL',
             rate: 450,
@@ -99,7 +99,7 @@ const listings = [
         },
         user: {
             name: 'Bonnie Riley',
-            image: '/img/users/e187c8.jpg',
+            image: 'img/users/e187c8.jpg',
             postDate: '02/18/19',
         }
     },
@@ -112,7 +112,7 @@ const listings = [
             year: 2017,
             color: 'blue',
             transmission: 'automatic',
-            image: '/img/vehicles/2017-lexus-is.jpg',
+            image: 'img/vehicles/2017-lexus-is.jpg',
             city: 'Philadelphia',
             state: 'PA',
             rate: 50,
@@ -125,7 +125,7 @@ const listings = [
         },
         user: {
             name: 'Reyna Chung',
-            image: '/img/users/80.jpg',
+            image: 'img/users/80.jpg',
             postDate: '04/27/19',
         }
     },
@@ -138,7 +138,7 @@ const listings = [
             year: 2019,
             color: 'black',
             transmission: 'automatic',
-            image: '/img/vehicles/2019-bmw-328i.jpg',
+            image: 'img/vehicles/2019-bmw-328i.jpg',
             city: 'Newark',
             state: 'NJ',
             rate: 50,
@@ -151,7 +151,7 @@ const listings = [
         },
         user: {
             name: 'Satya Patel',
-            image: '/img/users/66.jpg',
+            image: 'img/users/66.jpg',
             postDate: '11/11/19',
         }
     },
@@ -164,7 +164,7 @@ const listings = [
             year: 2016,
             color: 'black',
             transmission: 'automatic',
-            image: '/img/vehicles/2016-cadillac-escalade.jpg',
+            image: 'img/vehicles/2016-cadillac-escalade.jpg',
             city: 'Baltimore',
             state: 'MD',
             rate: 65,
@@ -177,7 +177,7 @@ const listings = [
         },
         user: {
             name: 'Mike Brown',
-            image: '/img/users/56_AL.jpg',
+            image: 'img/users/56_AL.jpg',
             postDate: '12/01/19',
         }
     },
@@ -190,7 +190,7 @@ const listings = [
             year: 2016,
             color: 'green',
             transmission: 'automatic',
-            image: '/img/vehicles/2016-ford-expedition.jpg',
+            image: 'img/vehicles/2016-ford-expedition.jpg',
             city: 'Boulder',
             state: 'CO',
             rate: 34,
@@ -203,7 +203,7 @@ const listings = [
         },
         user: {
             name: 'Spencer Horton',
-            image: '/img/users/8328.jpg',
+            image: 'img/users/8328.jpg',
             postDate: '12/18/18',
         }
     },
@@ -216,7 +216,7 @@ const listings = [
             year: 2016,
             color: 'yellow',
             transmission: 'automatic',
-            image: '/img/vehicles/2016-chevy-silverado.jpg',
+            image: 'img/vehicles/2016-chevy-silverado.jpg',
             city: 'Cincinnati',
             state: 'OH',
             rate: 40,
@@ -229,7 +229,7 @@ const listings = [
         },
         user: {
             name: 'Phoenix Baker',
-            image: '/img/users/uKeSMzeK.jpg',
+            image: 'img/users/uKeSMzeK.jpg',
             postDate: '12/18/18',
         }
     },
