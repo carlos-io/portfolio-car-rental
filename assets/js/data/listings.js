@@ -60,7 +60,7 @@ const listings = [
             year: 2018,
             color: 'gray',
             transmission: 'manual',
-            image: 'img/vehicles/2018-porsche-carrera.png',
+            image: 'img/vehicles/2018-porsche-carrera.jpg',
             city: 'Rochester',
             state: 'NY',
             rate: 100,
