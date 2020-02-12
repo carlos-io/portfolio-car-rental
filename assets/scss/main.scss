@@ -16,6 +16,7 @@
 @media only screen and (max-width: 1075px) {
   #sidemenu {
     display: block;
+    margin-top: 10px;
 
     #filters {
       display: block;
@@ -23,9 +24,16 @@
   }
 
   header {
+    position: fixed;
+    top: 0;
+    width: 90%;
+    z-index: 99;
+
     nav {
       #hamburger {
         display: block;
+        position: absolute;
+        right: 20px;
       }
 
       #links {
@@ -40,7 +48,7 @@
 
   #listings {
     display: block;
-    margin: 40px;
+    margin: 120px 40px 40px 40px;
     width: calc(100% - 80px);
 
     .search {
@@ -132,7 +140,7 @@
 @media only screen and (max-width: 700px) {
   #listings {
     display: block;
-    margin: 40px auto 0 auto;
+    margin: 120px auto 0 auto;
     width: calc(100% - 20px);
 
     .cards {
