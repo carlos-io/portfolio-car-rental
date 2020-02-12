@@ -6,7 +6,7 @@
 
   .search {
     padding: 10px 0;
-    border-bottom: 1px solid $offwhite2;
+    border-bottom: 1px solid $color-9;
 
     &:focus {
       outline: none;
@@ -20,7 +20,11 @@
         border: none;
         font-size: 2.1rem;
         font-weight: 400;
-        color: $darkgray;
+        color: $color-10;
+
+        &::placeholder {
+          color: $color-8;
+        }
 
         &:focus {
           outline: none;
@@ -34,12 +38,12 @@
       right: 2px;
       float: right;
       font-size: 2.5rem;
-      color: $offwhite2;
+      color: $color-8;
       transform: rotate(45deg);
       transition: all 0.1s ease-in-out;
 
       &:hover {
-        color: $darkgray;
+        color: $color-10;
       }
     }
   }
@@ -50,7 +54,7 @@
     .found {
       float: left;
       font-size: 0.8rem;
-      color: $gray;
+      color: $color-8;
     }
 
     .filter {
@@ -69,8 +73,8 @@
           font-weight: 700;
           letter-spacing: 1px;
           background: transparent;
-          color: $gray;
-          border: 1px solid $offwhite3;
+          color: $color-10;
+          border: 1px solid $color-9;
           border-radius: 5px;
 
           &:focus {
@@ -79,7 +83,7 @@
 
           &:-moz-focusring {
             color: transparent;
-            text-shadow: 0 0 0 $gray;
+            text-shadow: 0 0 0 $color-9;
           }
         }
 
@@ -87,7 +91,7 @@
           content: '\203A';
           font-size: 30px;
           font-weight: 100;
-          color: $lightgray2;
+          color: $color-8;
           transform: rotate(90deg);
           position: absolute;
           top: 5px;
@@ -123,7 +127,7 @@
           z-index: 2;
           bottom: 9px;
           left: 22px;
-          color: white;
+          color: $color-6;
           font-size: 0.9rem;
           font-weight: 700;
           letter-spacing: 1px;
@@ -147,7 +151,7 @@
           z-index: 1;
           font-size: 0.7rem;
           color: white;
-          background: linear-gradient(to right, rgba(48, 83, 172, 0.8) 0%,rgba(131, 109, 199, 0.8) 100%);
+          background: linear-gradient(to right, rgba($color-4, 0.8) 0%,rgba($color-4, 0.8) 100%);
           border-top-left-radius: 5px;
           border-top-right-radius: 5px;
           transition: all 0.1s ease-in-out;
@@ -204,14 +208,14 @@
             text-align: center;
             font-size: 1rem;
             font-weight: 700;
-            background: linear-gradient(to bottom, $blue 0%, $blue2 100%);
+            background: linear-gradient(to bottom, $color-2 0%, $color-1 100%);
             border-radius: 4px;
             transition: all 0.1s ease-in-out;
 
             &:hover {
               cursor: pointer;
-              color: $blue;
-              background: white;
+              color: $color-4;
+              background: $color-5;
             }
           }
         }
@@ -228,7 +232,7 @@
         .dailyfee {
           font-size: 1rem;
           letter-spacing: 1px;
-          color: $bluegray;
+          color: $color-10;
         }
 
         .location {
@@ -236,14 +240,14 @@
 
           i {
             font-size: 1.4rem;
-            color: $lightgray4;
+            color: $color-11;
           }
 
           span {
             margin-left: 10px;
             font-size: 1rem;
             letter-spacing: 1px;
-            color: $lightgray2;
+            color: $color-11;
             position: relative;
             top: -2px;
           }
@@ -269,7 +273,7 @@
     }
 
     .previous {
-      color: $lightpink;
+      color: rgba($color-3, 0.3);
       transition: all 0.1s ease-in-out;
     }
 
@@ -279,7 +283,7 @@
         width: 27px;
         padding-top: 9px;
         padding-left: 1px;
-        color: $bluegray;
+        color: $color-10;
         border-radius: 50%;
         background: none;
         transition: all 0.1s ease-in-out;
@@ -292,13 +296,13 @@
 
       &.active div,
       div:hover {
-        color: white;
-        background: linear-gradient(to bottom, $blue 0%, $blue 100%);
+        color: $color-6;
+        background: linear-gradient(to bottom, $color-2 0%, $color-1 100%);
       }
     }
 
     .next {
-      color: $lightpink;
+      color: rgba($color-3, 0.3);
       transition: all 0.1s ease-in-out;
     }
   }

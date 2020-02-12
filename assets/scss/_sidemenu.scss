@@ -6,7 +6,7 @@
   top: 0;
   right: 0;
   height: 100%;
-  background-color: $darkpurple;
+  background-color: $color-4;
   z-index: 3;
   transition: all 0.2s ease-in-out;
   transform: translateX(calc(100% + 1px));
@@ -23,7 +23,7 @@
     .bar1, .bar2, .bar3 {
       width: 30px;
       height: 4px;
-      background-color: white;
+      background-color: color-6;
       margin: 6px 0 0 auto;
       transition: 0.1s;
     }
@@ -49,14 +49,14 @@
 
     a {
       display: block;
-      padding: 8px 0;
+      padding: 5px 0;
       margin-left: 15px;
       font-size: 1.1rem;
       font-weight: 700;
-      color: white;
+      color: $color-6;
 
       &:hover {
-        color: $pink;
+        color: $color-5;
       }
     }
   }
@@ -107,6 +107,7 @@
 
       input {
         top: 8px;
+        right: 1px;
       }
 
       span {
