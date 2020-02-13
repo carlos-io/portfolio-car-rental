@@ -62,7 +62,7 @@ export default class Listings extends Component {
 
     return (<section id="listings">
       <div className="search">
-        <span><input type="text" name="search" id="search" placeholder="Find Your Ride" onChange={this.props.change} /></span>
+        <span><input type="text" name="search" id="search" placeholder="Enter Your Ride" onChange={this.props.change} /></span>
         <a onClick={this.props.clear} style={{ cursor: 'pointer' }}><span>+</span></a>
       </div>
       <div className="found-filter">
