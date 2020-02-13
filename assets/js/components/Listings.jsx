@@ -4,7 +4,10 @@ export default class Listings extends Component {
   constructor() {
     super()
     this.showListings = this.showListings.bind(this)
+    this.showOverlay = this.showOverlay.bind(this)
   }
+
+  showOverlay() {}
 
   showListings() {
     const pagination = document.getElementById('pagination')
@@ -20,7 +23,7 @@ export default class Listings extends Component {
 
     return this.props.listings.map(l => (
       <div className="card">
-        <div className="top" style={{ background: `url(${l.vehicle.image}) center/100% 100% no-repeat` }}>
+        <div className="top" style={{ background: `url(${l.vehicle.image}) center/100% 100% no-repeat` }} onClick={this.showOverlay}>
           <div className="vehicle">{l.vehicle.year} {l.vehicle.manufacturer} {l.vehicle.model}</div>
           <div className="overlay">
             <div className="user">
