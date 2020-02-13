@@ -1,0 +1,165 @@
+@media only screen and (max-width: 1075px) {
+  #sidemenu {
+    display: block;
+    margin-top: 10px;
+
+    #filters {
+      display: block;
+    }
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 90%;
+    height: 40px;
+    z-index: 99;
+
+    .logo {
+      font-size: 0.8rem;
+
+      .car {
+        a {
+
+          div {
+            i {
+              font-size: 1.7rem;
+            }
+          }
+        }
+      }
+    }
+
+    nav {
+      #hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+      }
+
+      #links {
+        display: none;
+      }
+    }
+  }
+
+  #filters {
+    display: none;
+  }
+
+  #listings {
+    display: block;
+    margin: 80px 40px 40px 40px;
+    width: calc(100% - 80px);
+
+    .search {
+      span {
+        input {
+          width: 80%;
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .found-filter {
+      .found {
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  footer {
+    height: 350px;
+
+    .app {
+      float: unset;
+      top: 160px;
+
+      .phone {
+        display: none;
+      }
+
+      .download {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 50px;
+
+        .call2action {
+          font-size: 1.2rem;
+        }
+
+        .proposition {
+          display: none;
+        }
+
+        .playstore {
+          margin: 0;
+          padding: 10px 15px;
+          margin: 20px 15px 20px 0;
+        }
+
+        .appstore {
+          margin: 0;
+          padding: 10px 15px;
+        }
+      }
+
+      .socialmedia {
+        .facebook {
+          text-align: initial;
+        }
+
+        .twitter {
+          text-align: initial;
+        }
+      }
+
+      .copyright {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+
+    .sitemap {
+      float: unset;
+      position: absolute;
+      top: 45px;
+      width: 80%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      grid-template-columns: 120px 120px;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #listings {
+    display: block;
+    margin: 60px auto 0 auto;
+    width: calc(100% - 20px);
+
+    .cards {
+      margin: 80px auto 20px auto;
+
+      .card {
+        display: block;
+        margin: 0 auto 35px auto;
+      }
+    }
+
+    .pagination {
+      padding: 0 50px;
+      margin-bottom: 20px;
+
+      & > div {
+        padding: 10px;
+      }
+    }
+  }
+}
